@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/store?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf-8&allowPublicKeyRetrieval=true    
+    password: Xsx7591532463
+    username: root
+  mvc:
+    view:
+      prefix: /jsp/
+      suffix: .jsp
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+logging:
+ level:
+    root: info
+    com.jayfan: debug
+ file: log/my.log
